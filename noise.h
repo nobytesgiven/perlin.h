@@ -50,7 +50,7 @@ void pseudo_gradient(double** grad, int *coords, unsigned int n) { // random n d
 	int uniq = coords[0];
 	
 	for (int i=1; i<(int)n; i++) {
-		uniq += primes[i%3]*coords[i];
+		uniq += primes[i%10]*coords[i];
 	}
 	
 	double pseudo_noise_unused;
